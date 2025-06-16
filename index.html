@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesoría EFIP 1 Abogacía (Siglo 21) - Sabrina Gentile</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Applying Inter font to the body */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style for smooth transitions */
+        .transition-all {
+            transition: all 0.3s ease-in-out;
+        }
+        /* Style for the custom pack option cards in the modal */
+        .pack-option {
+            display: block;
+            padding: 1rem;
+            border: 2px solid #e5e7eb; /* gray-200 */
+            border-radius: 0.5rem; /* rounded-lg */
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.2s ease-in-out;
+        }
+        .pack-option:hover {
+            border-color: #334155; /* slate-700 */
+            background-color: #f8fafc; /* slate-50 */
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4 sm:p-6 lg:p-8">
+
+    <div class="w-full max-w-4xl mx-auto">
+        <div id="main-container" class="bg-white rounded-xl shadow-lg overflow-hidden transition-all">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                
+                <!-- Left Side: Information & Video Player -->
+                <div class="p-8 md:p-12 bg-slate-800 text-white flex flex-col">
+                    <h1 class="text-3xl font-bold leading-tight">Prepara tu Examen EFIP 1 de Abogacía</h1>
+                    <p class="text-xl text-slate-300 mb-4 font-medium">Universidad Siglo 21 | por Sabrina Gentile</p>
+                    <p class="text-slate-300 mb-6">
+                        Te ofrezco una asesoría integral con un método de estudio probado para que rindas con éxito tu Examen Final Integrador Presencial.
+                    </p>
+                    
+                    <!-- Vertical Video Player -->
+                    <div class="mb-6">
+                        <div class="mx-auto w-full max-w-[280px] bg-slate-900/50 rounded-3xl p-2 shadow-2xl ring-2 ring-slate-700">
+                            <video class="w-full rounded-2xl aspect-[9/16] object-cover" controls poster="https://placehold.co/360x640/1e293b/ffffff?text=Video+Vertical">
+                                <source src="https://raw.githubusercontent.com/sabrinagentile/Asesoria/main/prueba.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </div>
+                    </div>
+
+                    <ul class="space-y-4 mt-auto">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-emerald-400 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong class="font-semibold">Preparación de 5 semanas:</strong> Un método probado para garantizar una preparación completa.</span>
+                        </li>
+                        <li class="flex items-start">
+                           <svg class="w-6 h-6 text-emerald-400 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong class="font-semibold">Práctica Oral Integral:</strong> Simulacros de examen para que llegues con confianza.</span>
+                        </li>
+                         <li class="flex items-start">
+                            <svg class="w-6 h-6 text-emerald-400 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong class="font-semibold">Recursos de Estudio:</strong> Clases en vivo, grupos de estudio y material exclusivo.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-emerald-400 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong class="font-semibold">Soporte Constante:</strong> Apoyo continuo para generar confianza de cara al examen final.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Side: Form -->
+                <div class="p-8 md:p-12 flex items-center">
+                    <div id="form-wrapper" class="w-full">
+                        <h2 class="text-2xl font-bold text-slate-800 mb-6">Contactame por WhatsApp</h2>
+                        <form id="contact-form">
+                            <div class="space-y-6">
+                                <!-- Full Name -->
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre y Apellido (Opcional)</label>
+                                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-slate-500 focus:border-slate-500 transition-colors" placeholder="Ej: Maria Gonzalez">
+                                </div>
+                                
+                                <!-- Exam/Subject -->
+                                <div>
+                                    <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Materia o Examen de Interés (Opcional)</label>
+                                    <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-slate-500 focus:border-slate-500 transition-colors" placeholder="Ej: Oral de Privado, Escrito de Público">
+                                </div>
+
+                                <!-- Message -->
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje (Opcional)</label>
+                                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-slate-500 focus:border-slate-500 transition-colors" placeholder="Cuéntame un poco más sobre lo que necesitas..."></textarea>
+                                </div>
+                            </div>
+                            
+                            <!-- Submit Button -->
+                            <div class="mt-8">
+                                <button type="submit" class="w-full bg-emerald-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 shadow-md transform hover:-translate-y-0.5 transition-all flex items-center justify-center space-x-2">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M16.75,13.96C17.09,14.3 17.07,14.88 16.73,15.22C16.22,15.73 15.34,16.48 14.59,17.23C13.83,17.98 12.96,18.34 12.39,18.34C11.83,18.34 11.2,18.13 10.73,17.66C10.2,17.13 9.17,16.24 8,15.07C6.83,13.9 5.92,12.82 5.39,12.29C4.92,11.82 4.73,11.21 4.73,10.66C4.73,10.1 4.94,9.5 5.41,9.03C5.88,8.56 6.46,8.41 6.94,8.41C7.17,8.41 7.38,8.46 7.57,8.55C7.91,8.71 8.21,9.05 8.35,9.39L8.9,10.64C9.05,10.98 9.07,11.38 8.92,11.72C8.78,12.06 8.52,12.34 8.2,12.56L7.73,12.93C7.62,13.02 7.56,13.16 7.59,13.3C7.62,13.43 7.68,13.56 7.77,13.65C8.25,14.13 9.12,14.99 10.18,16.05C11.24,17.11 12.1,17.98 12.58,18.46C12.67,18.55 12.8,18.61 12.93,18.64C13.07,18.67 13.21,18.61 13.3,18.5L13.67,18.03C13.89,17.71 14.17,17.45 14.51,17.31C14.85,17.17 15.25,17.19 15.59,17.34L16.84,17.89C17.18,18.03 17.52,18.33 17.68,18.67C17.77,18.86 17.82,19.07 17.82,19.3C17.82,19.78 17.67,20.36 17.2,20.83C16.73,21.3 15.86,21.66 15.29,21.66C14.73,21.66 13.5,21.4 11.5,19.4C9.5,17.4 7.8,14.78 7.8,14.78C7.65,14.54 7.6,14.28 7.6,14.01C7.6,13.35 8.04,12.77 8.5,12.31L8.91,11.9C8.97,11.84 9.02,11.77 9.06,11.69C9.2,11.37 9.13,10.99 8.91,10.71L8.36,9.46C8.26,9.22 8.05,9.03 7.8,8.9C7.57,8.78 7.28,8.74 7,8.74C6.54,8.74 6.03,8.89 5.6,9.32C5.17,9.75 4.96,10.29 4.96,10.83C4.96,11.45 5.18,12.13 5.72,12.67C6.27,13.22 7.25,14.21 8.5,15.45C9.75,16.7 10.73,17.68 11.28,18.23C11.83,18.78 12.51,19.01 13.13,19.01C13.4,19.01 13.67,18.96 13.93,18.85C14.45,18.63 15.3,18.09 16.26,17.13C17.22,16.17 17.76,15.32 17.98,14.8C18.09,14.54 18.14,14.27 18.14,14C18.14,13.28 17.41,12.55 16.75,13.96Z"></path></svg>
+                                    <span>Elegir Pack y Enviar WhatsApp</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Pack Selection -->
+    <div id="pack-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4 hidden z-50 transition-opacity opacity-0">
+        <div class="bg-white rounded-xl shadow-2xl p-6 md:p-8 w-full max-w-md transform transition-transform scale-95">
+            <h3 class="text-2xl font-bold text-slate-800 mb-2 text-center">Selecciona un Pack</h3>
+            <p class="text-center text-sm text-gray-600 mb-6">¡Precios con 20% de descuento ya aplicado!</p>
+            <div id="modal-pack-options" class="space-y-4">
+                <!-- Pack 1 -->
+                <div class="pack-option" data-value="PACK REPASITO $80.000">
+                    <span class="font-bold text-slate-700">PACK REPASITO</span>
+                    <span class="block text-sm text-gray-500">$80.000</span>
+                </div>
+                <!-- Pack 2 -->
+                 <div class="pack-option" data-value="PACK INTENSIVO $190.000">
+                    <span class="font-bold text-slate-700">PACK INTENSIVO</span>
+                    <span class="block text-sm text-gray-500">$190.000</span>
+                </div>
+                <!-- Pack 3 -->
+                 <div class="pack-option" data-value="PACK REGULAR FULL $390.000">
+                    <span class="font-bold text-slate-700">PACK REGULAR FULL</span>
+                    <span class="block text-sm text-gray-500">$390.000</span>
+                </div>
+            </div>
+            <button id="close-modal" class="mt-6 w-full text-center text-sm text-gray-500 hover:text-gray-800 transition-colors">Cancelar</button>
+        </div>
+    </div>
+
+    <script>
+        // Get references to all necessary elements
+        const form = document.getElementById('contact-form');
+        const modal = document.getElementById('pack-modal');
+        const modalContent = modal.querySelector('.transform');
+        const closeModalButton = document.getElementById('close-modal');
+        const modalOptionsContainer = document.getElementById('modal-pack-options');
+
+        // This object will hold the form data when the button is clicked
+        let formData = {};
+
+        // --- Event Listeners ---
+
+        // 1. Listen for the main form submission to open the modal
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent page reload
+
+            // Store current form values
+            formData.name = document.getElementById('name').value;
+            formData.subject = document.getElementById('subject').value;
+            formData.message = document.getElementById('message').value;
+
+            // Show the modal with a smooth animation
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.add('opacity-100');
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            }, 10); // A small delay to ensure CSS transition applies
+        });
+
+        // 2. Listen for a click on a pack option inside the modal
+        modalOptionsContainer.addEventListener('click', function(event) {
+            const selectedPackElement = event.target.closest('.pack-option');
+
+            if (selectedPackElement) {
+                const selectedPackValue = selectedPackElement.dataset.value;
+                
+                // Construct and open the WhatsApp link
+                openWhatsApp(selectedPackValue);
+                
+                // Hide the modal after selection
+                hideModal();
+            }
+        });
+
+        // 3. Listen for clicks on the "Cancel" button
+        closeModalButton.addEventListener('click', hideModal);
+
+        // 4. Also close the modal if the user clicks on the dark background
+        modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                hideModal();
+            }
+        });
+
+        // --- Helper Functions ---
+
+        /**
+         * Hides the modal with a smooth animation.
+         */
+        function hideModal() {
+            modal.classList.remove('opacity-100');
+            modalContent.classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300); // Match this with CSS transition duration
+        }
+
+        /**
+         * Constructs the WhatsApp message and opens the link.
+         * @param {string} selectedPackValue The value of the chosen pack.
+         */
+        function openWhatsApp(selectedPackValue) {
+            const phoneNumber = '5491131312542';
+
+            // Start constructing the message with the selected pack
+            let text = `Hola Sabrina, quiero solicitar información sobre la asesoría para el EFIP 1. Estoy interesado/a en el siguiente pack:\n*${selectedPackValue}*`;
+            
+            // Append other form fields if they have content
+            if (formData.name && formData.name.trim() !== '') {
+                text += `\n\n*Nombre:* ${formData.name}`;
+            }
+            if (formData.subject && formData.subject.trim() !== '') {
+                text += `\n*Mi consulta es sobre:* ${formData.subject}`;
+            }
+            if (formData.message && formData.message.trim() !== '') {
+                text += `\n*Mensaje:* ${formData.message}`;
+            }
+
+            // Encode the final message for the URL
+            const encodedText = encodeURIComponent(text);
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedText}`;
+
+            // Open the link in a new tab
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+
+</body>
+</html>
